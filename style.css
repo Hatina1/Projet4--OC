@@ -867,10 +867,6 @@ h4 {
         background-attachment: scroll;
     }
 
-    .quote {
-        width: 500px;
-        height: auto;
-    }
 }
 
 @media (max-width: 991px) {
@@ -1038,11 +1034,6 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
-    }
-
-    .quote {
-        width: 400px;
-        height: auto;
     }
 }
 
