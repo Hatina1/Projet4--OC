@@ -302,10 +302,22 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    height: 100%;
+    width: 215px;
     margin: 0 5px 0 0;
     display: inline;
 }
+
+.taille {
+    height: 100%;
+    width: 100%;
+}
+
+.taille2 {
+    height: 100px;
+    width: 100px;
+}
+
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
