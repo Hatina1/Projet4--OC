@@ -27,6 +27,24 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
+figure {
+    padding: 15px;
+    width: 300px;
+    height: 100%;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
 .bloc {
     width: 100%;
     clear: both;
@@ -93,6 +111,8 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    height: 100%;
+    width: 100%;
 }
 
 .b-parallax {
@@ -648,7 +668,9 @@ h6,
 p,
 label,
 .btn,
-a {
+a,
+figure,
+figcaption {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -677,7 +699,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
@@ -703,6 +725,11 @@ p {
     max-width: 400px;
     margin: auto auto auto auto;
 }
+
+.link-color, .footer-color{
+    color: #3D3D3D;
+}
+
 
 h2 {
     font-size: 22px;
@@ -778,14 +805,20 @@ h4 {
     color: #F3976C!important;
 }
 
+.tc-secondary {
+    color: #FFBA8B!important;
+}
+
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+   /* color: #FFFFFF!important;*/
+   color: #3D3D3D;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    /* color: #FFFFFF!important;*/
+    color: #3D3D3D;
 }
 
 .ltc-white {
@@ -819,10 +852,14 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
+    width: 100%;
+    height: 100%;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1024px) {
