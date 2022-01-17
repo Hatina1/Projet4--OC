@@ -32,6 +32,15 @@ figure {
     height: 100%;
 }
 
+figcaption {
+    font-size: 12px;
+}
+
+blockquote {
+    border-left: none;
+    margin: 0 0 5px;
+}
+
 blockquote p {
     font-style: italic;
 }
@@ -721,7 +730,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -733,7 +742,7 @@ p {
     margin: auto auto auto auto;
 }
 
-.link-color, .footer-color{
+.ts-bgw-color, .link-color, .footer-color{
     color: #3D3D3D;
 }
 
@@ -774,19 +783,20 @@ h4 {
 }
 
 .portfolio-thumb {
+    display: block;
     margin-bottom: 24px;
     height: 290px;
     width: 290px;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-device-width: 321px) and (max-device-width: 375px){
     .portfolio-thumb {
         height: 345px;
         width: 345px;
     } 
 }
 
-@media screen and (max-width: 425px){
+@media screen and (min-device-width: 376px) and (max-device-width: 425px){
     .portfolio-thumb {
         height: 375px;
         width: 375px;
@@ -901,10 +911,13 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 70%;
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 100%;
+    }
+    .nav > li {
+        font-size: 12px;
     }
 }
 
