@@ -789,7 +789,7 @@ h4 {
     width: 290px;
 }
 
-@media screen and (min-device-width: 375px) and (min-device-width: 424px){
+@media screen and (min-device-width: 375px) and (max-device-width: 424px){
     .portfolio-thumb {
         height: 345px;
         width: 345px;
